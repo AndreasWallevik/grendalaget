@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GRENDALAGET — Offisiell side</title>
-  <meta name="description" content="Ny musikk, konserter og nyhetsbrev fra ARTISTNAVN." />
-  <meta property="og:title" content="ARTISTNAVN — Offisiell side" />
-  <meta property="og:description" content="Ny musikk, konserter og nyhetsbrev fra ARTISTNAVN." />
+  <meta name="description" content="Ny musikk, konserter og nyhetsbrev fra GRENDALAGET." />
+  <meta property="og:title" content="GRENDALAGET — Offisiell side" />
+  <meta property="og:description" content="Ny musikk, konserter og nyhetsbrev fra GRENDALAGET." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/cover.jpg" />
+  <meta property="og:image" content="assets/cover.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -31,18 +31,25 @@
     .embed iframe{width:100%; height:152px}
     @media (min-width: 820px){ .grid{grid-template-columns:1.2fr .8fr} .embed iframe{height:232px} }
     .muted{color:#9b9ca3}
+      .hero{width:100%;max-height:420px;object-fit:cover;border-radius:14px;border:1px solid #26262b;display:block;margin:8px 0 16px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="muted">ARTISTNAVN</div>
+      <div class="muted">GRENDALAGET</div>
     </header>
 
     <main>
       <section class="card">
         <h1>Ny singel ute nå</h1>
-        <p class="lead">Grendalaget debuterer med singelen “Sexy” – en melodisk, dreamy banger som setter Hardangerfjord-rap på kartet, en gang for alle. De gjør det sexy i fjorden. </p>
+        <p class="lead">Grendalaget debuterer med singelen “Sexy” – en melodisk, dreamy banger som setter Hardangerfjord-rap på kartet, en gang for alle. De gjør det sexy i fjorden.</p>
+
+        <!-- Hero-bilde -->
+        <img class="hero" src="assets/cover.jpg" alt="Grendalaget cover" loading="lazy" width="1600" height="900" />
+
+        <!-- Ekstra bilde -->
+        <img class="hero" src="assets/sexy3.jpg" alt="Grendalaget – Sexy artwork" loading="lazy" width="1600" height="900" />
 
         <div class="links">
           <a class="btn" href="https://open.spotify.com/artist/..." target="_blank" rel="noopener">Spotify</a>
@@ -67,7 +74,7 @@
     </main>
 
     <footer>
-      <small class="muted">© <span id="year"></span> ARTISTNAVN. Alle rettigheter forbeholdt.</small>
+      <small class="muted">© <span id="year"></span> GRENDALAGET. Alle rettigheter forbeholdt.</small>
     </footer>
   </div>
 
